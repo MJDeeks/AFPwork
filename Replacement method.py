@@ -14,3 +14,4 @@ print(replacement4)
 
 com1 = replacement4.upper()
 print(com1)
+
