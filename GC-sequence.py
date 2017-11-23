@@ -20,3 +20,4 @@ print(per)
 #the format method allows me to format the float with any number of decimal
 #places. I can easily add more placeholders and variables
 print(round(per, 2))
+print(round(per, 1))
