@@ -1,5 +1,6 @@
 #open file
-dna_file = open("/user/18dbrennan-rasmussen/desktop/genomic_data.txt", 'r')
+dna_file = open('/Users/18dbrennan-rasmussen/Desktop/genomic_dna.txt')
+#dna_file = open('DNAcoding.txt')
 #read dna from file
 dna = dna_file.read()
 
@@ -24,4 +25,4 @@ noncoding_file = open('noncoding,txt', 'w')
 noncoding_file.write(intron)
 print('non coding file - noncoding.txt')
 #save andc close
-noncoding_forl.close()
+noncoding_file.close()
