@@ -1,13 +1,14 @@
-start
-open file for reading, infile = open(ex3-1_input.txt)
-open file for writing, outfile = open('trim.txt', 'w')
+#open files
+inFile = open('/Users/18dbrennan-rasmussen/Downloads/ex3-1_input.txt', 'r')
+outFile = open('trim.txt.', 'w')
 
-for each line in file, for line in file
-    for each line in file find length
-    wanted <- length-13
-    output wanted to screen
-    output wanted to outfile
+#trim, add line to fine, print length of line
+for line in inFile:
+    line = line[14:]
+    outfile = outFile.write(line)
+    print('line is', len(line), "characters long")
+    print(line)
 
-close infile, infile.close
-close outfile, outfile.close
-stop
+#close files
+outFile.close()
+inFile.close()
