@@ -14,28 +14,28 @@ def menu():
         choice = input('please make a choice')
         if choice == '4':
             print('quitting...')
-            print('----------------------------')
+            print('-----------------------------')
             break
         #kilometres to metres
         elif choice == '3':
             kilo = int(input('enter a number of kilometres'))
             metr = (kilo*1000)
             print('{0} kilometres = {1:.1f} metres'.format(kilo, metr))
-            print('----------------------------')
+            print('-----------------------------')
             menu()
         #centimetres to milimetres
         elif choice == '2':
             cent = int(input('enter a measurement in centimetres'))
             mili = (cent*10)
             print('{0} centimetres = {1:.1f} milimetres'.format(cent, mili))
-            print('----------------------------')
+            print('-----------------------------')
             menu()
         #fahrenheit to celcius
         elif choice == '1':
             val = int(input('enter a temperature'))
             cel = ftoc(val)
             print('{0} fahrenheit = {1:.1f} celcius'.format(val, cel))
-            print('----------------------------')
+            print('-----------------------------')
             menu()
         else:
             print('I do not understand')
