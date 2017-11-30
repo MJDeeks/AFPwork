@@ -39,6 +39,7 @@ def menu():
             menu()
         else:
             print('I do not understand')
+            print('-----------------------------')
             menu()
 
 #create function to convert farenheit to celcius
